@@ -267,8 +267,17 @@ footer {
 
 @media screen and (min-width: 1000px) {
 
+    .dsktop-nav {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
     .head-text p {
         width: 80%;
+    }
+
+    .get-started-cta {
+        max-width: 20%;
     }
 
     main {
