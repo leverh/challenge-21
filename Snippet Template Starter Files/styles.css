@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    background-image: url(./Assets/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.dsktop-nav {
+    display: none;
+}
+
+.mbl-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.head-text {
+    margin: 4rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+.head-text p {
+    font-size: 2rem;
+    color: #383838;
+}
+
+.get-started-cta {
+    padding: 1.5rem 7rem;
+    font-size: 1.7rem;
+    background-color: black;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+span {
+    color: #adaeae;
+}
+
+.main-img {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 100%;
+}
+
+.main-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+main {
+    margin: 7rem 2rem;
+    text-align: left;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 3px 3px 7px rgba(47, 46, 46, 0.4);
+    border-radius: 6px;
+}
+
+.main-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+h2 {
+    font-size: 3.5rem;
+}
+
+.main-text p {
+    font-size: 2rem;
+    color: #383838;
+}
+
+.get-started {
+    padding: 1.5rem 3rem 1.5rem 2.5rem;
+    font-size: 1.7rem;
+    background-color: black;
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+footer {
+    margin: 6rem 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.website-foot {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.foot-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+.foot-links a {
+    color: #383838;
+    text-decoration: none;
+}
+
+.attribution {
+    margin-top: 7rem;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: #1d1d1d;
+}
+
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (min-width: 650px) {
+    .mbl-nav {
+        display: none;
+    }
+
+    .dsktop-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .dsk {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .dsk a {
+        color: #383838;
+        font-size: 1.2rem;
+        text-decoration: none;
+    }
+
+    .get-started {
+        font-size: 1.3rem;
+        padding: 1rem;
+    }
+
+    .get-started-cta {
+        padding: 1.5rem 1.5rem;
+        width: 25%;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    .head-text {
+        margin-bottom: 9rem;
+    }
+
+    .main-img img {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    main img {
+        max-width: 60%;
+        margin-left: 20%;
+    }
+
+    .main-text {
+        margin: 6rem 3rem;
+        align-items: flex-start;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+    
+    .main-text p {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .website-foot {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .foot-links {
+        gap: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+
+
+}
+
+@media screen and (min-width: 800px) {
+
+    h1 {
+        width: 80%;
+    }
+    
+    .head-text p {
+        width: 90%;
+    }
+
+}
+
+
+@media screen and (min-width: 1000px) {
+
+    .head-text p {
+        width: 80%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-top: 10rem;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    main img {
+        width: 130%;
+    }
+}
+
